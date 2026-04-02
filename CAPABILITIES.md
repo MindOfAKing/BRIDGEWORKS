@@ -119,12 +119,17 @@ Last updated: 2026-04-01
 | `KIE_AI_API_KEY` | SET | Image, thumbnail, social visual generation |
 | `BLOTATO_API_KEY` | SET | Social media publishing |
 | `TOMBA_API_KEY` + `TOMBA_SECRET_KEY` | SET | Email prospecting / lead finding |
-| `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | SET (TEST) | Payment flow — swap for live key before launch |
-| `STRIPE_SECRET_KEY` | SET (TEST) | Payment flow — swap for live key before launch |
-| `STRIPE_WEBHOOK_SECRET` | MISSING — placeholder | Stripe webhook verification — get from Stripe dashboard |
-| `NEXT_PUBLIC_WEB3FORMS_KEY` | MISSING — placeholder | Contact form submissions |
+| `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | SET (LIVE) | Payment flow — live keys active since 2026-04-01 |
+| `STRIPE_SECRET_KEY` | SET (LIVE) | Payment flow — live keys active since 2026-04-01 |
+| `STRIPE_WEBHOOK_SECRET` | SET (LIVE) | Stripe webhook verification — configured 2026-04-01 |
+| `NEXT_PUBLIC_WEB3FORMS_KEY` | SET | Contact form submissions — configured 2026-04-01 |
 | `SMTP_USER` / `SMTP_PASS` / `SMTP_FROM` | SET | Email confirmation via Gmail SMTP |
 | `NEXT_PUBLIC_BASE_URL` | SET | Base URL for redirects |
+| `CAL_API_KEY` | SET (LIVE) | Cal.com scheduling — discovery calls, configured 2026-04-02 |
+| `GOOGLE_API_KEY` | SET | Google API (Maps, Places, etc.) — configured 2026-04-02 |
+| `ANTHROPIC_API_KEY` | SET | Claude API — configured 2026-04-02 |
+| `HUNTER_API_KEY` | SET | Hunter.io — email finder, domain search, verification — configured 2026-04-02 |
+| `APIFY_API_KEY` | SET | Apify — web scraping, crawling, data extraction — configured 2026-04-02 |
 
 ---
 
@@ -138,6 +143,7 @@ Last updated: 2026-04-01
 | Gmail | `claude_ai_Gmail` | Read/search Gmail, create drafts |
 | Google Calendar | `claude_ai_Google_Calendar` | List, create, update calendar events |
 | Canva | `claude_ai_Canva` | Design creation, editing, export in Canva |
+| Blotato | `blotato` (HTTP MCP) | Social media publishing — post to multiple platforms |
 
 ---
 
