@@ -1,18 +1,22 @@
 # Marketing Audit: CEEFM Kft
 **URL:** https://ceefm.eu
-**Date:** March 29, 2026
-**Business Type:** Local Business / Facility Management
-**Overall Marketing Score: 23/100 (Grade: F)**
+**Date:** April 3, 2026
+**Business Type:** Local B2B Services (Facility Management)
+**Overall Marketing Score: 38/100 (Grade: F)**
 
 ---
 
 ## Executive Summary
 
-CEEFM Kft has operated for 12+ years, completed 200+ projects across Hungary, Romania, and Slovakia, and maintains a 9.5 client satisfaction rating. The business is real. The digital presence is not.
+CEEFM Kft scores 38 out of 100 in this marketing audit, placing it in the critical category. The site functions as a clean digital brochure but fails at nearly every dimension that drives leads, builds trust, and generates organic discovery.
 
-The ceefm.eu website is a React single-page application that serves an empty `<div id="root"></div>` to search engine crawlers. All content is JavaScript-rendered with zero server-side rendering. There are no crawlable internal links, no sitemap, no robots.txt, no blog, no case studies, and no Hungarian-language content despite operating in Hungary for over a decade. The site has one indexable URL. Competitors have 15-40 pages each.
+The biggest strength is a clear niche focus. CEEFM targets residential complexes, hotels, and student housing in Budapest. No major competitor in Hungary explicitly claims this segment. The Limehome partnership is a real, verifiable credential that carries weight in the hospitality space. The bilingual site (EN/HU) signals readiness for international property owners.
 
-The biggest gap is not optimization. It is existence. The website must be rebuilt before any marketing strategy can function. The three highest-impact actions are: (1) rebuild the site with server-side rendering and multi-page architecture, (2) create 5 case studies from existing projects, and (3) launch Hungarian-language content targeting local search terms. Implementing all recommendations could generate an estimated 15-30 qualified inbound leads per month within 6 months, representing potential revenue of 2-5M HUF/month in new contract value.
+The biggest gap is trust infrastructure. There are zero named testimonials, zero case studies, zero certifications displayed, and a broken stats counter that shows "0+" for every metric. For a B2B service where property managers are handing over building keys, this trust deficit is the primary conversion blocker.
+
+The technical foundation is solid. The site is built with Astro (static site generator), serving fully rendered HTML to all crawlers. Hreflang tags are correctly implemented for English, Hungarian, and x-default. All major AI crawlers are explicitly allowed in robots.txt. The framework choice is modern and performant.
+
+The top three actions that would move the needle most: (1) add 3-5 named testimonials and 2-3 case studies with measurable results, (2) break the single-page structure into dedicated service and industry pages to capture search traffic, and (3) fix the inaccurate schema data and broken stats counter that actively damage credibility. Conservative estimate: implementing all recommendations could generate an additional $2,000-$8,000/month in qualified lead value within 6 months.
 
 ---
 
@@ -20,158 +24,200 @@ The biggest gap is not optimization. It is existence. The website must be rebuil
 
 | Category | Score | Weight | Weighted Score | Key Finding |
 |----------|-------|--------|---------------|-------------|
-| Content & Messaging | 22/100 | 25% | 5.5 | Near-zero content. No blog, no case studies, generic tagline |
-| Conversion Optimization | 6/100 | 20% | 1.2 | No CTAs, no forms, no lead capture of any kind |
-| SEO & Discoverability | 28/100 | 20% | 5.6 | SPA renders empty div for crawlers. One indexable URL |
-| Competitive Positioning | 32/100 | 15% | 4.8 | No differentiation. 14 services reduced to 6 cleaning variants on site |
-| Brand & Trust | 31/100 | 10% | 3.1 | Strong offline track record, zero online proof |
-| Growth & Strategy | 28/100 | 10% | 2.8 | Referral-dependent. No inbound engine. No retention system |
-| **TOTAL** | | **100%** | **23/100** | |
+| Content & Messaging | 38/100 | 25% | 9.5 | Generic copy, broken social proof, zero content depth |
+| Conversion Optimization | 35/100 | 20% | 7.0 | Single conversion path, no mid-page CTAs, no pricing signals |
+| SEO & Discoverability | 48/100 | 20% | 9.6 | Solid Astro SSG foundation, but single-page structure limits keyword targeting |
+| Competitive Positioning | 40/100 | 15% | 6.0 | Clear niche but zero differentiation content vs. larger competitors |
+| Brand & Trust | 36/100 | 10% | 3.6 | No testimonials, no team page, no certifications displayed |
+| Growth & Strategy | 20/100 | 10% | 2.0 | No content marketing, no referral program, no nurture funnel |
+| **TOTAL** | | **100%** | **38/100** | |
 
 ---
 
 ## Quick Wins (This Week)
 
-1. **Create robots.txt and sitemap.xml.** Add both files to the `/public/` directory. Even with one page, this signals a maintained site to crawlers. Takes 15 minutes.
+1. **Fix the stats counter bug.** The hero stats section shows "0+" for Properties Managed, Client Retention, and Years Experience. This is a JavaScript animation that failed to render. Replace with hardcoded numbers immediately (e.g., "50+ Properties Managed," "95% Client Retention," "14 Years Experience"). A broken counter on a facility management site communicates carelessness. *Impact: High. Effort: 30 minutes.*
 
-2. **Fix the Open Graph image.** The og:image meta tag points to a file that does not exist (404). Upload a proper og-image.jpg (1200x630px) to `/public/`. This affects every social media share.
+2. **Fix structured data accuracy.** The schema markup claims 200 ratings and service areas in Romania and Slovakia. CEEFM has approximately 50 projects and focuses on Budapest/Hungary. Correct the rating count, remove Romania/Slovakia from areaServed, add a full Budapest address with geo coordinates, and ensure the data matches reality. Inaccurate structured data risks a Google manual action. *Impact: High. Effort: 1 hour.*
 
-3. **Add address to LocalBusiness schema.** The schema markup is missing the registered address (Templomkert utca 8, Nagykovacsi). Add `address`, `geo` coordinates, and `openingHours`. Critical for local search pack visibility.
+3. **Fix llms.txt to match corrected facts.** The AI-facing file contains the same inflated numbers. Update to reflect 50+ projects and Hungary-only focus. *Impact: Medium. Effort: 15 minutes.*
 
-4. **Add FAQPage schema.** The FAQ section already exists in the React code. Wrapping it in FAQPage structured data enables rich snippets in Google search results. The data is already there, just unstructured.
+4. **Add a visible phone number with click-to-call.** The phone number (+36 30 600 5400) exists in schema and footer but is not prominent on the page. Add it to the navigation bar and next to the contact form. B2B facility management buyers often prefer to call directly. *Impact: Medium. Effort: 1 hour.*
 
-5. **Fix telephone format in schema.** Change `+36306005400` to `+36 30 600 5400` for proper international formatting.
+5. **Add 2-3 mid-page CTAs.** The "Request a Site Assessment" button appears only at the top and bottom. Insert a simple CTA block after the Services section and after the "Why CEEFM" section: "Ready to discuss your property? Request a Site Assessment." *Impact: Medium. Effort: 2 hours.*
 
-6. **Add click-to-call on phone numbers.** Wrap all phone number displays in `<a href="tel:+36306005400">` tags. Mobile visitors need one tap to call.
+6. **Add a client logo bar.** Display 6-8 client logos with Limehome as the named anchor. Even anonymized logos ("Budapest hotel chain," "120-unit residential complex") are better than nothing. *Impact: High. Effort: 1-2 days.*
 
-7. **Add preconnect hints.** Add `<link rel="preconnect">` for fonts.googleapis.com, images.unsplash.com, and cdn.abacus.ai. Reduces connection overhead by 100-200ms.
+7. **Add social media links.** Create or link a LinkedIn company page at minimum. Post the Limehome partnership as the first piece of content. *Impact: Low-Medium. Effort: 1 day.*
 
-8. **Fix font loading strategy.** Move Google Fonts from CSS @import inside JSX to `<link rel="preload">` in the HTML head. Current chain: HTML > JS > CSS > Font request. Should be: HTML > Font request.
+8. **Verify hreflang implementation.** Hreflang tags and the /hu/ route already exist and appear functional. Confirm both language versions serve correct content and that hreflang x-default points to the English version. Ensure the Hungarian meta title and description are fully translated (current HU meta description appears to still be in English). *Impact: Medium. Effort: 1 hour.*
+
+9. **Preload critical fonts.** Add `<link rel="preload">` hints for key fonts in the HTML head. This reduces render-blocking and improves LCP. *Impact: Low-Medium. Effort: 30 minutes.*
 
 ---
 
 ## Strategic Recommendations (This Month)
 
-1. **Rebuild the site with server-side rendering or static generation.** The current Vite SPA renders a blank div for every search engine and AI crawler. Options: (a) Switch to Next.js or Astro with SSR/SSG, (b) Pre-render the current React app with a tool like react-snap, (c) Build a simple multi-page HTML/CSS site. Option (c) is fastest for a 10-15 page brochure site. This is the single most impactful change. Without it, no SEO effort matters.
+1. **Build 3 case studies.** One apartment complex, one hotel (Limehome), one student housing. Include specific results: cost savings percentages, response times, tenant satisfaction improvements, compliance audit results. These become the most powerful conversion pages on the site. *Impact: High. Timeline: 2-4 weeks.*
 
-2. **Create individual pages for each service category.** Each of the 14 service categories needs its own URL: `/services/cleaning`, `/services/maintenance`, `/services/energy-management`, etc. Each page needs 500+ words of specific content, a relevant image, a CTA, and service-specific schema markup. This multiplies indexable URLs from 1 to 15+.
+2. **Collect and publish 3-5 named testimonials.** Gather quotes from property managers with their name, title, and company. Place them near the contact form and in a dedicated testimonials section. Even short quotes ("CEE FM reduced our common area complaints by 40% in the first quarter") carry significant weight. *Impact: High. Timeline: 1-2 weeks.*
 
-3. **Build 5 case studies from existing projects.** Select the best hotel, apartment complex, student housing, commercial, and multi-property projects. Document: client challenge, CEEFM solution, measurable results, timeline. These become the strongest trust signals on the site and the most shareable content for LinkedIn.
+3. **Expand the FAQ to 8-10 questions.** Add answers to: pricing ranges, contract length and flexibility, emergency response times, onboarding process, what the site assessment includes, service area boundaries, minimum property size, and cancellation terms. Each unanswered objection is a lost lead. *Impact: Medium. Timeline: 1 week.*
 
-4. **Add a quote request form to every page.** Fields: Name, Company, Email, Phone, Property Type (dropdown), Service Needed (dropdown). Place above the fold on service pages and in the footer site-wide. This is the minimum viable lead capture mechanism.
+4. **Create a team page.** Show the founder, key account managers, and operations leads with photos and brief bios. B2B buyers in facility management want to know who they are trusting with their buildings. *Impact: Medium. Timeline: 2 weeks.*
 
-5. **Launch Hungarian-language content.** Create all pages in both English and Hungarian. Target "letesitmenykezeles Budapest," "takaritas szalloda Budapest," "epuletkarbantartas," and related Hungarian search terms. A bilingual site doubles the addressable search audience.
+5. **Add a pricing philosophy page.** Not exact prices, but tier descriptions (Essential, Professional, Premium) with "starting from" indicators and a "Request Custom Quote" CTA. Complete pricing opacity increases bounce rate from serious buyers. *Impact: Medium-High. Timeline: 1-2 weeks.*
 
-6. **Build a team/about page.** Name the leadership. Show faces. Include years of experience and relevant qualifications. For a service business, people are the product. Anonymous companies lose to companies with visible teams.
-
-7. **Create industry-specific landing pages.** Separate pages for: Hotels, Apartment Complexes, Student Housing, Office Buildings. Each speaks to the specific pain points of that client type. "Hotel Facility Management in Budapest" will rank for searches that "Facility Management" alone cannot.
+6. **Create a "Why CEE FM" comparison page.** Position the niche residential/hospitality focus as an advantage over generalist giants like B+N Referencia (8,500 employees) and Dussmann (1,300+ in Hungary). Frame: "Every client gets a dedicated account manager. Your property is never just a number in a portfolio of thousands." *Impact: Medium. Timeline: 1 week.*
 
 ---
 
 ## Long-Term Initiatives (This Quarter)
 
-1. **Launch a content marketing program.** Publish 2-4 blog posts per month targeting facility management topics in Hungarian and English. Topics: seasonal maintenance guides, energy saving tips, compliance checklists, industry trend analysis. Goal: build organic search traffic from 0 to 500+ monthly visitors within 6 months.
+1. **Break into a multi-page site structure.** Create dedicated pages: /services/deep-cleaning, /services/facility-management, /services/eco-cleaning, /industries/hotels, /industries/apartments, /industries/student-housing, /about, /contact. The Astro framework already supports multi-page architecture natively. Each page targets specific keywords and improves internal linking. This is the single highest-impact SEO change. *Impact: Critical. Timeline: 4-6 weeks.*
 
-2. **Implement Google Business Profile optimization.** Claim and optimize the Google Business Profile. Add photos, services, posts, and actively collect Google reviews from existing clients. For local service businesses, GBP drives more leads than the website in many cases.
+2. **Launch a content hub.** Publish 2-4 articles per month targeting long-tail keywords in both English and Hungarian. Topics: "facility management costs Budapest," "hotel cleaning compliance Hungary," "apartment complex maintenance checklist," "irodatakaritas budapest," "lakopark karbantartas." This builds organic visibility and creates a nurture funnel for leads who are not ready to buy. *Impact: High. Timeline: Ongoing from month 1.*
 
-3. **Build an integrated FM sales package.** Stop selling 14 separate services. Lead with "Integrated Facility Management" as a single monthly contract for hotels and commercial properties. Price at a premium. Cross-sell individual services from there. Create a dedicated landing page for this offer.
+3. **Build a Google Business Profile and review presence.** Target 50+ Google reviews within 6 months. Facility management decisions are influenced by online reputation. Currently CEEFM is invisible on third-party review platforms. *Impact: High. Timeline: 3-6 months.*
 
-4. **Develop a client retention system.** Implement quarterly business reviews, annual contract renewals, and a client portal for maintenance requests and reporting. The 98% retention claim needs infrastructure behind it.
+4. **Pursue and display ISO certifications.** ISO 9001 (quality management) and ISO 45001 (occupational health and safety) are standard in the industry. Competitors display multiple ISO certifications. Missing certifications is a trust gap that eliminates CEEFM from formal procurement processes. *Impact: Medium-High. Timeline: 3-6 months.*
 
-5. **Establish competitive positioning.** Create a "Why CEEFM" page that directly addresses why a Budapest property manager should choose a 12-year local operator over global brands (ISS, CBRE, Atalian) or cheaper alternatives. Use the Limehome partnership and 200+ project track record as proof points.
+5. **Develop the eco cleaning positioning into a full brand pillar.** Create a dedicated page with methodology, products used, environmental impact data, and alignment with EU sustainability directives. Sustainability in facility management is a growing procurement criterion for European hotel chains and institutional property owners. *Impact: Medium. Timeline: 2-3 months.*
 
 ---
 
 ## Detailed Analysis by Category
 
-### Content & Messaging Analysis (22/100)
+### Content & Messaging Analysis
 
-**Headline clarity:** The tagline "Where Sustainability Meets Success" (ceefm.com) and "Elevating Property Standards" (ceefm.eu) both fail the 5-second test. Neither mentions facility management, Budapest, or any specific service. A visitor cannot tell what CEEFM does within 5 seconds of landing.
+**Score: 38/100**
 
-**Value proposition:** Scattered and weak. The 200+ projects and 9.5 rating are isolated numbers without context or source. No framing ("200+ projects makes us Budapest's most experienced mid-size FM provider"). The rating has no attribution.
+The hero headline "Elevating Property Standards" fails the 5-second test. It is a brand-first statement that does not communicate what CEEFM does or for whom. A visitor must read the subheading to understand the business. The subheading ("Precision hygiene and facility management for high-value residential complexes and hospitality assets") does the work the headline should do.
 
-**Body copy:** Zero pain points addressed. No mention of unreliable contractors, energy cost overruns, compliance headaches, or tenant complaints. No desired outcomes articulated. No statements like "We reduced energy costs by X% for [client type]."
+The four "Why CEEFM" differentiators (Contract-Based Reliability, Compliance & Safety, Data & Transparency, Dedicated Account Manager) are reasonable but not distinctive. Every professional FM company in Budapest could claim the same. Nothing answers the question: "Why CEEFM instead of the three other companies I am also evaluating?"
 
-**Social proof:** Three testimonials exist but two are from the same company (Flavor Group Kft). Only first name and last initial used. No photos, no video, no LinkedIn links. No client logos displayed anywhere. Zero case studies despite 200+ projects.
+Body copy is feature-oriented, not outcome-oriented. "Deep Cleaning & Sanitization" describes what CEEFM does, but not what the client gains. No mention of reduced complaints, lower turnover, faster turnaround between guests, or passing inspections on the first attempt.
 
-**Content depth:** No blog, no FAQ (in content terms, only in the React component), no resource library, no team page, no portfolio. For a 12-year company, this is the single biggest content failure.
+Social proof is essentially broken. The stats counter shows "0+" for every metric. The schema claims 9.5/10 from 200 ratings with no verifiable source. There are no named testimonials, no case study links, and no client logos beyond Limehome.
 
-**Brand voice:** No discernible voice. Copy reads like template text. The sustainability angle is a tagline with zero supporting evidence.
+The FAQ section has only 3 questions. For a B2B company targeting multiple industries, this is thin. Missing answers to pricing, onboarding, emergency response, contract flexibility, and service area specifics. Each unanswered question is a lost lead.
 
-### Conversion Optimization Analysis (6/100)
+There is no blog, no resource section, and no downloadable guides. CEEFM has zero organic content footprint for any search query.
 
-**CTAs:** No visible call-to-action buttons on ceefm.eu. No "Get a Quote," "Request a Callback," or "Book a Consultation." The contact form on the current React site exists but is buried at the bottom with no prominence.
+### Conversion Optimization Analysis
 
-**Forms:** The contact form uses Web3Forms integration and has basic fields but no service-type dropdown, no property-type selector, and no response-time promise. No multi-step form. No quick-quote mechanism on service sections.
+**Score: 35/100**
 
-**Visual hierarchy:** The single-page layout scrolls through sections but lacks conversion architecture (problem > solution > proof > action). Trust signals are not placed near conversion points.
+The primary CTA language ("Request a Site Assessment") is strong. It is specific, implies a tangible deliverable for the prospect, and differentiates from generic "Contact Us" forms. The "within one business day" response promise reduces uncertainty.
 
-**Mobile:** Layout is responsive (good), but no click-to-call, no sticky mobile header with contact options, no WhatsApp button. For a local service business where 50-60% of traffic is mobile, this is a significant conversion loss.
+However, the single-page structure creates a long scroll from awareness to conversion. The CTA appears at the top and bottom only. There are no mid-page conversion points during the Services, Industries, Partners, or Why CEEFM sections. Visitors convinced halfway down have nowhere to act.
 
-**Lead capture:** No email capture, no downloadable resources, no chat widget, no callback request feature, no WhatsApp Business integration. The site is a dead end.
+The form includes a property type dropdown which reduces friction and helps CEEFM qualify leads. But there is no phone number visible near the form, no calendar booking option, and no secondary conversion path for visitors not ready to request an assessment (no newsletter, no downloadable guide, no email capture).
 
-### SEO & Discoverability Analysis (28/100)
+No pricing page exists. For B2B facility management, exact prices may not be feasible, but the complete absence of pricing guidance means every form submission is a blind inquiry, lowering both submission rates and lead quality.
 
-**Critical issue: SPA with no SSR.** The HTML body served to crawlers is `<div id="root"></div>`. Googlebot may partially render JavaScript, but Bing, AI crawlers, and social scrapers see nothing. This means the site is effectively invisible to most of the internet.
+Trust signals near the form are thin: EU compliance mention, Limehome partnership, and the response time promise. Missing: testimonials adjacent to the form, security badges, number of active clients, certifications.
 
-**Single URL:** Only `https://ceefm.eu/` exists. Zero additional paths. Navigation uses JavaScript `scrollTo()` calls, not `<a href>` links. There are zero anchor tags in the entire application. No crawlable links anywhere.
+The broken stats counter ("0+" for all metrics) actively destroys credibility at a critical moment in the visitor's decision process. This is worse than having no stats at all.
 
-**Schema markup:** LocalBusiness schema is present with basic info but missing address, geo coordinates, opening hours, sameAs links, and aggregate rating. FAQ data exists in the React code but has no FAQPage schema.
+No secondary conversion paths exist. No lead magnet, no newsletter, no chat widget, no WhatsApp link. The site operates as a binary: request an assessment or leave. This loses 80-90% of visitors who are researching but not ready to commit.
 
-**No sitemap.xml or robots.txt.** Standard crawl infrastructure is completely absent.
+### SEO & Discoverability Analysis
 
-**Images:** All hotlinked from Unsplash and cdn.abacus.ai. No width/height attributes (causes layout shift). og:image points to a 404. Logo inconsistency between local file and CDN reference.
+**Score: 48/100**
 
-**Mobile:** Strong. Viewport meta tag correct, responsive breakpoints implemented, mobile hamburger menu works.
+The site has a solid technical foundation. It is built with Astro (a static site generator) that serves fully rendered HTML to all crawlers. This is a significant advantage. All content is server-rendered and immediately accessible to search engines and AI systems without JavaScript execution.
 
-**Accessibility:** Zero ARIA attributes. Navigation uses span/div with onClick instead of anchor/button elements. Form inputs use placeholder as the only label. No skip-to-content link. No semantic HTML landmarks.
+Meta tags are present and functional. The title tag (58 characters) is within the ideal range. The meta description contains relevant keywords. OG tags and Twitter Cards are configured. The canonical URL is set correctly.
 
-**Page speed:** 233KB JS bundle (acceptable), but render-blocking JavaScript means blank page until full bundle downloads and executes. Font loading chain is deeply nested (HTML > JS > CSS > Font request). No preload hints.
+Hreflang tags are implemented for English (`en`), Hungarian (`hu`), and `x-default`. The `/hu/` route exists as a real URL serving Hungarian content. This is the correct approach for a bilingual Budapest business. One issue: the Hungarian meta description may still be in English, which should be verified and corrected.
 
-### Competitive Positioning Analysis (32/100)
+The robots.txt explicitly allows all major AI crawlers: GPTBot, ChatGPT-User, Google-Extended, PerplexityBot, ClaudeBot, and Applebot-Extended. This is proactive and well-configured.
 
-**Positioning:** Generic. "Elevating Property Standards" could describe any FM company. No "we are the only company that..." statement. The Limehome partnership is the strongest unique asset and it is barely mentioned.
+The primary SEO issue is structural. The single-page design means all English content lives on one URL and all Hungarian content on another. There are no separate pages for services, industries, about, or contact. This eliminates the ability to rank for individual service keywords like "deep cleaning Budapest" or "hotel facility management Hungary."
 
-**Capability gap:** 14 service categories in reality, 6 cleaning-focused services on the website. Three-country operations reduced to Hungary-only messaging. 200+ projects with zero shown. The website dramatically underrepresents the actual business.
+The sitemap lists only the root URL. No interior pages because none exist.
 
-**Competitor comparison:** Mid-size Budapest FM competitors (First Facility, ICON, Dome FSG) likely have multi-page websites with 15-40 indexable URLs each. CEEFM has 1. On any search query more specific than the brand name, CEEFM will not appear.
+Header hierarchy uses generic labels. H2s say "Core Services" and "Industries We Serve" rather than keyword-rich headings like "Facility Management Services in Budapest." Every heading is a missed keyword opportunity.
 
-**No competitive narrative.** No language addressing why a prospect should choose CEEFM over ISS, CBRE, or Atalian. No comparison pages. No switching incentives.
+Images are hosted externally (Unsplash, cdn.abacus.ai) with no local optimization, no WebP format, and no srcset for responsive loading. Missing width/height attributes contribute to layout shift.
 
-**Third-party reputation:** No Google reviews embedded, no Trustpilot, no visible industry directory listings.
+Schema data contains critical inaccuracies: 200 ratings (actual ~50 projects), Romania/Slovakia service areas (actual: Hungary only), and an aggregateRating with no verifiable source. This risks a Google manual action. The schema also lacks a full address and geo coordinates, which are required for LocalBusiness rich results.
 
-### Brand & Trust Analysis (31/100)
+Accessibility is weak. No ARIA attributes, no skip-to-content link, form inputs use placeholders instead of proper labels. This affects both usability and search ranking.
 
-**Strengths:** 12+ years of operation, 200+ projects, 9.5 rating, multi-country presence, real testimonials from named executives. These are genuine trust signals that most newer competitors cannot match.
+### Competitive Positioning Analysis
 
-**Weaknesses:** None of these signals are effectively displayed. No case studies (the single biggest trust failure). No team page. No certifications or accreditations visible. No client logos. Sustainability tagline with zero proof (no ESG reporting, no green certifications, no sustainability metrics).
+**Score: 40/100**
 
-The raw material for a 75+ trust score exists. The problem is that nothing is visible online. A prospect checking ceefm.eu before or after a meeting finds almost nothing to build confidence.
+CEEFM operates in a market with established players:
 
-### Growth & Strategy Analysis (28/100)
+- **B+N Referencia Zrt.** 8,500 employees, 9 ISO certifications, autonomous cleaning robots, press coverage in Budapest Business Journal, clients include Bosch, UniCredit, Telekom
+- **Dussmann Hungary** German multinational, 1,300+ employees, EUR 35M+ turnover, D&B AAA rating for 5 consecutive years
+- **First Facility Hungary** International FM group, ISO 9001/14001/45001 certified, operates in 9 European countries
+- **ICON Real Estate Management** Budapest-based, manages 500,000+ sqm, clients include Corvin Towers
 
-**Growth model:** Referral-dependent. With near-zero digital presence, growth relies entirely on personal relationships and word-of-mouth. This is slow, unpredictable, and invisible to the 90%+ of FM buyers who start online.
+CEEFM's clear niche focus on residential and hospitality is a genuine differentiator. No competitor explicitly claims this segment:
+- B+N targets industrial, corporate, healthcare, transport
+- Dussmann targets industrial, healthcare, education, corporate
+- First Facility targets office buildings, shopping centers, industrial
+- ICON targets office, retail, industrial, logistics
 
-**No inbound engine.** No SEO, no content, no local search optimization. For "facility management Budapest" and related terms, CEEFM is invisible.
+The residential/hospitality niche is genuinely uncontested. The Limehome partnership validates the hospitality positioning.
 
-**Service positioning:** 14 categories is operationally impressive but strategically unfocused. Leading with 2-3 core services and cross-selling the rest would be more effective.
+However, the site has zero competitive differentiation infrastructure. No comparison pages, no "why us" content, no case studies proving results. The size disadvantage (50+ employees vs. 8,500 at B+N) is not addressed or reframed as a "boutique specialist" advantage.
 
-**Market timing:** Good. Hungary FM market at $3.58B growing 4% annually. Budapest office market is 4.25M sqm. Integrated FM contracts growing 7% in CEE. But the window is closing as global brands expand in the region.
+The certification gap is the biggest credibility risk. B+N holds 9 ISO standards. First Facility holds 3. CEEFM displays zero. In formal procurement processes, ISO certification is often a minimum qualifying requirement.
+
+No third-party reviews are visible. B+N has press coverage and awards. Dussmann has D&B AAA ratings. CEEFM is invisible in third-party channels.
+
+The niche window is open now but temporary. If B+N or Dussmann decided to create a hospitality FM division, they could outspend and outmarket CEEFM quickly. The time to establish category ownership is now.
+
+### Brand & Trust Analysis
+
+**Score: 36/100**
+
+The business model is clear: contract-based B2B facility management with a site assessment as the entry point. Property type segmentation lets different buyer personas self-identify. The bilingual site signals readiness for international property owners.
+
+Trust signals are almost entirely self-declared. "Premier facility management company" is an empty claim without proof. The emotional trust layer (real people, real results, real relationships) that closes B2B deals is completely absent. No team page, no founder story, no named humans anywhere on the site.
+
+The broken stats counter showing "0+" for all metrics is actively destructive. A visitor sees "0+ properties managed" and reads it as "this company has accomplished nothing." Whether it is a JavaScript bug or not, the effect is the same.
+
+The schema markup claims 9.5/10 from 200 ratings with no verifiable source. This undermines credibility with search engines and savvy buyers who check structured data.
+
+The eco cleaning positioning is a smart but underused differentiator. Sustainability in facility management is a growing procurement criterion. This should be elevated to a pillar, not a bullet point.
+
+### Growth & Strategy Analysis
+
+**Score: 20/100**
+
+This is the weakest category. CEEFM has almost no visible growth infrastructure. The site functions as a digital brochure with a single conversion path and zero mechanisms for nurturing, retaining, or expanding client relationships digitally.
+
+No content marketing. No referral program. No email capture for non-ready visitors. No client portal. No partnership ecosystem beyond Limehome. No upsell or cross-sell paths. No pricing tiers.
+
+No social media presence exists. No LinkedIn company page, no profiles linked from the site. For a B2B company in 2026, LinkedIn is where property managers, hotel operations directors, and real estate investors spend time.
+
+No Google Business Profile presence is evident. For a Budapest-based service company, GBP is critical for local search. "Facility management Budapest" queries surface competitors with optimized profiles and reviews.
+
+For a 14-year-old company with 50+ employees, the gap between operational maturity and digital growth maturity is stark. The business clearly grows through offline referrals and direct sales, but these do not scale and are invisible to online evaluators.
+
+Market timing is favorable. FM outsourcing is growing across CEE. The EU Green Deal pushes sustainability requirements. Budapest's growing hotel market creates demand. CEEFM is positioned in the right market at the right time but is not capitalizing on these tailwinds.
 
 ---
 
 ## Competitor Comparison
 
-| Factor | CEEFM Kft | First Facility HU | ICON RE Mgmt | Dome FSG |
-|--------|-----------|-------------------|-------------|----------|
-| Website pages | 1 | 15-30 (est.) | 15-30 (est.) | 20-40 (est.) |
-| Languages | EN + HU (JS only) | HU + EN | HU + EN | EN + multi-CEE |
-| Case studies | 0 | Likely present | Likely present | Likely present |
-| Blog/content | None | Unknown | Unknown | Likely present |
-| Google reviews | Not visible | Likely present | Likely present | Likely present |
-| Certifications | Not shown | ISO likely shown | Industry certs likely | ISO 9001/14001 likely |
-| Contact form | Basic (buried) | Structured (likely) | Structured (likely) | Multi-office (likely) |
-| SSR/crawlable | No (SPA) | Likely yes | Likely yes | Likely yes |
+| Factor | CEEFM | B+N Referencia | Dussmann Hungary | First Facility |
+|--------|-------|----------------|------------------|----------------|
+| Headline Clarity | 6/10 | 7/10 | 6/10 | 5/10 |
+| Value Prop Strength | 5/10 | 8/10 | 7/10 | 6/10 |
+| Trust Signals | 3/10 | 9/10 | 8/10 | 7/10 |
+| CTA Effectiveness | 4/10 | 5/10 | 5/10 | 4/10 |
+| Content Depth | 2/10 | 8/10 | 7/10 | 6/10 |
+| Niche Focus | 9/10 | 4/10 | 4/10 | 5/10 |
+| Certifications | 1/10 | 9/10 | 8/10 | 9/10 |
+
+**Key insight:** CEEFM wins on niche focus (the only company specifically targeting residential/hospitality) but loses on every trust and content metric. The niche advantage is currently invisible because the site does not make the case for why specialization matters.
 
 ---
 
@@ -179,26 +225,27 @@ The raw material for a 75+ trust score exists. The problem is that nothing is vi
 
 | Recommendation | Est. Monthly Impact | Confidence | Timeline |
 |---------------|-------------------|------------|----------|
-| Rebuild site with SSR + multi-page | 500K-1M HUF | High | 4-6 weeks |
-| Add quote request forms | 300K-800K HUF | High | 1 week |
-| Create 5 case studies | 200K-500K HUF | Medium | 2-3 weeks |
-| Launch Hungarian content | 400K-1M HUF | Medium | 3-4 weeks |
-| Google Business Profile optimization | 200K-500K HUF | High | 1 week |
-| Blog content program (ongoing) | 300K-800K HUF | Medium | 8-12 weeks |
-| Industry-specific landing pages | 200K-500K HUF | Medium | 2-3 weeks |
-| **Total Potential** | **2M-5M HUF/month** | | **3-6 months** |
+| Add case studies + testimonials | $1,500-$3,000 | High | 2-4 weeks |
+| Multi-page site structure | $800-$2,000 | Medium | 4-6 weeks |
+| Fix stats counter + schema | $300-$500 | High | 1 day |
+| Mid-page CTAs + phone number | $200-$500 | Medium | 1 week |
+| Content marketing (ongoing) | $500-$1,500 | Medium | 3+ months |
+| Pricing philosophy page | $300-$800 | Medium | 1-2 weeks |
+| Google Business Profile + reviews | $400-$1,000 | Medium | 3-6 months |
+| **Total Potential** | **$4,000-$9,300/mo** | | |
 
-*Estimates based on typical B2B local service conversion rates (2-5%), average FM contract values in Budapest (500K-2M HUF/month), and projected traffic growth from 0 to 500-1,000 monthly visitors.*
+*Estimates based on: ~500-1,500 monthly visitors (projected post-SEO), 1-3% conversion rate improvement on assessment requests, average FM contract value of $2,000-$5,000/month.*
 
 ---
 
 ## Next Steps
 
-1. **Rebuild the website with SSR/SSG and multi-page architecture.** Nothing else works until crawlers can read the site. This is the foundation for every other recommendation.
-2. **Create case studies and Hungarian content simultaneously.** These are the highest-value content assets and can be built in parallel with the site rebuild.
-3. **Optimize Google Business Profile and collect reviews.** Fastest path to local search visibility while the website rebuild is in progress.
+1. **Fix the broken elements today:** Stats counter, structured data accuracy, llms.txt. These are actively damaging credibility and take under 2 hours total.
+2. **Collect testimonials and start case studies this week.** Reach out to 5 existing clients for quotes. Begin documenting the Limehome partnership as the first case study.
+3. **Plan the multi-page site expansion.** The Astro framework already supports multi-page architecture natively. Map out service, industry, and about pages to break the single-URL bottleneck.
 
 ---
 
-*Generated by AI Marketing Suite | /market audit*
-*Prepared by BridgeWorks for CEEFM Kft | March 2026*
+*Generated by AI Marketing Suite -- `/market audit`*
+
+office@bridgeworks.agency . bridgeworks.agency
