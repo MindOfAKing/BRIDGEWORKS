@@ -8,10 +8,10 @@
 - [x] Fix schema data (ratingCount 50, removed Romania/Slovakia) ✓ Apr 9
 - [x] Fix llms.txt (50+ projects, Hungary only) ✓ Apr 9
 - [ ] Add visible phone number with click-to-call in nav + near form — ON HOLD (owners prefer no personal line)
-- [ ] Add 2-3 mid-page CTAs after Services and Why CEEFM sections
+- [x] ~~Add 2-3 mid-page CTAs~~ — struck off. Hero + Nav CTAs provide sufficient conversion path.
 
 ### BridgeWorks Launch Content (Apr 18 launch)
-- [ ] Write blog post: GEO explainer (what it is, why it matters)
+- [x] Write blog post: GEO explainer (what it is, why it matters) ✓ Apr 12
 - [ ] Write blog post: SEO vs GEO comparison
 - [ ] Write blog post: CEE FM case study (using real audit data)
 - [ ] Build /geo-audit lead magnet page on bridgeworks.agency
@@ -19,7 +19,8 @@
 
 ### CEE FM Client Delivery
 - [x] ~~Send brand visual proposal PDF to Victor~~ — no longer necessary per Victor (Apr 10)
-- [ ] Import april-calendar.ics into Google Calendar for posting reminders
+- [x] ~~Brand visual design package~~ — cancelled. Client will not proceed. (Apr 12)
+- [x] Import april-calendar.ics into Google Calendar for posting reminders ✓ Apr 12
 
 ## Next Week (Apr 11-17) -- Launch Polish
 
