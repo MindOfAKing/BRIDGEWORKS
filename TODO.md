@@ -1,39 +1,48 @@
 # BridgeWorks To-Do List
-*Last updated: 2026-04-03*
+*Last updated: 2026-04-13*
 
-## This Week (Apr 4-10)
+## Completed
 
-### CEE FM Site Fixes (2 hours total)
-- [x] Fix stats counter bug — already correct on live site (50+, 98%, 10+)
-- [x] Fix schema data (ratingCount 50, removed Romania/Slovakia) ✓ Apr 9
-- [x] Fix llms.txt (50+ projects, Hungary only) ✓ Apr 9
-- [ ] Add visible phone number with click-to-call in nav + near form — ON HOLD (owners prefer no personal line)
-- [x] ~~Add 2-3 mid-page CTAs~~ — struck off. Hero + Nav CTAs provide sufficient conversion path.
+### CEE FM Site Fixes
+- [x] Fix stats counter bug
+- [x] Fix schema data (ratingCount 50, removed Romania/Slovakia)
+- [x] Fix llms.txt (50+ projects, Hungary only)
+- [ ] Add visible phone number with click-to-call — ON HOLD (owners prefer no personal line)
 
-### BridgeWorks Launch Content (Apr 18 launch)
-- [x] Write blog post: GEO explainer (what it is, why it matters) ✓ Apr 12
-- [ ] Write blog post: SEO vs GEO comparison
-- [ ] Write blog post: CEE FM case study (using real audit data)
-- [ ] Build /geo-audit lead magnet page on bridgeworks.agency
-- [ ] Update bridgeworks.agency homepage hero copy + GEO service section
+### BridgeWorks Launch Content
+- [x] Write blog post: GEO explainer (what it is, why it matters)
+- [x] Write blog post: SEO vs GEO comparison
+- [x] Write blog post: CEE FM case study (using real audit data)
+- [x] Build /geo-audit lead magnet page on bridgeworks.agency
+- [x] Update homepage FreeAudit CTA to link to /geo-audit
+- [x] Fix false "competitor comparison" claim across all audit references
+- [x] Add competitive analysis upsell hook on /geo-audit page
 
 ### CEE FM Client Delivery
-- [x] ~~Send brand visual proposal PDF to Victor~~ — no longer necessary per Victor (Apr 10)
-- [x] ~~Brand visual design package~~ — cancelled. Client will not proceed. (Apr 12)
-- [x] Import april-calendar.ics into Google Calendar for posting reminders ✓ Apr 12
+- [x] Brand visual design package — cancelled by client (Apr 12)
+- [x] Import april-calendar.ics into Google Calendar
 
-## Next Week (Apr 11-17) -- Launch Polish
+### Launch Prep
+- [x] Draft LinkedIn countdown sequence (16 posts in personal-brand-workspace)
+- [x] Draft The Bridge Issue 002 newsletter
 
-### Launch Sequence
-- [ ] Plan LinkedIn post sequence (countdown to Apr 18)
-- [ ] Draft The Bridge newsletter launch issue
+---
+
+## This Week (Apr 14-18) — Launch Week
+
+### Launch Day (Apr 18)
 - [ ] Prepare launch day post sequence (LinkedIn, Twitter/X)
 - [ ] Cross-media content calendar (LinkedIn, blog, Instagram, newsletter)
+- [ ] Set up The Bridge Issue 002 in Beehiiv
 
-### CEE FM Strategic
-- [ ] Add client logo bar (Limehome anchor + anonymized references)
+### BridgeWorks Site
+- [ ] Add client logo bar to homepage (Limehome anchor + anonymized references)
+
+### CEE FM
 - [ ] Start collecting testimonials from CEE FM clients
-- [ ] Begin Limehome case study draft
+- [ ] Posts 7-9 (Apr 15-17) — drafted, need scheduling/publishing
+
+---
 
 ## Backlog (This Month)
 
