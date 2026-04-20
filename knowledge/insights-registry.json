@@ -86,5 +86,45 @@
       "kb_file": "knowledge/workflows/nocode-ai-automation-service-biz.md",
       "actionability": "high"
     }
+    ,
+    {
+      "id": "ins-20260420-001",
+      "type": "tool",
+      "name": "OpenAI Codex 2026 (The Codex Super-App)",
+      "businesses": ["bridgeworks"],
+      "actionability": "high",
+      "source_url": "https://youtube.com/watch?v=KXIdYEdOPys",
+      "source_channel": "Riley Brown",
+      "source_title": "Codex Full Course 2026: The NEW Best AI Coding Tool",
+      "extracted": "2026-04-20",
+      "file_path": "knowledge/tools/openai-codex-2026.md",
+      "skill_candidate": true
+    },
+    {
+      "id": "ins-20260420-002",
+      "type": "strategy",
+      "name": "Never Dilute Yourself",
+      "businesses": ["bridgeworks", "personal-brand", "mindofaking"],
+      "actionability": "high",
+      "source_url": "https://youtube.com/watch?v=3xTcFmn8yQ0",
+      "source_channel": "Alex Hormozi",
+      "source_title": "Never Dilute Yourself",
+      "extracted": "2026-04-20",
+      "file_path": "knowledge/strategies/never-dilute-yourself.md",
+      "skill_candidate": false
+    },
+    {
+      "id": "ins-20260420-003",
+      "type": "strategy",
+      "name": "Prepare Like Crazy",
+      "businesses": ["bridgeworks", "personal-brand"],
+      "actionability": "medium",
+      "source_url": "https://youtube.com/watch?v=Y0uCUf0ysyY",
+      "source_channel": "Alex Hormozi",
+      "source_title": "Prepare Like Crazy",
+      "extracted": "2026-04-20",
+      "file_path": "knowledge/strategies/prepare-like-crazy.md",
+      "skill_candidate": false
+    }
   ]
 }
