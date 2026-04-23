@@ -103,3 +103,8 @@ Friday review: revisit "This week's single best close" — did the four items mo
 ### Daily log
 
 <!-- Append entries here. Most recent at top. -->
+
+### 2026-04-23
+- Closed: CLAUDE.md rollout across 5 repos + global + Drive reference; Bridgeworks Financial Tracker uploaded to 05 - Finance & Admin; BridgeWorks repo positioning aligned with live site
+- Opened: (none)
+- Tomorrow's one: backend setup work — pick one of the four DoD items and close it
