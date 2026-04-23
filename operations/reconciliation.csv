@@ -1,0 +1,7 @@
+Ref,Client,Description,Issued,Due,Amount,Currency,Status,Paid Date,Channel,Payment Ref,Accountant,Notes
+CEEFM-PAY-003-1,CEEFM Kft,Digital Growth - Setup fee (part 1 of 2),2026-04-15,2026-04-15,735.00,EUR,,,,,,Installment 1 of 6. Confirm paid status against Wise.
+CEEFM-PAY-003-2,CEEFM Kft,Digital Growth - Setup balance (part 2 of 2),2026-04-30,2026-04-30,315.00,EUR,,,,,,Installment 2 of 6. Due in 7 days.
+CEEFM-PAY-003-3,CEEFM Kft,Digital Growth - Monthly retainer (May),2026-05-31,2026-05-31,400.00,EUR,,,,,,Installment 3 of 6.
+CEEFM-PAY-003-4,CEEFM Kft,Digital Growth - Monthly retainer (June),2026-06-30,2026-06-30,400.00,EUR,,,,,,Installment 4 of 6.
+CEEFM-PAY-003-5,CEEFM Kft,Digital Growth - Monthly retainer (July),2026-07-31,2026-07-31,400.00,EUR,,,,,,Installment 5 of 6.
+CEEFM-PAY-003-6,CEEFM Kft,Digital Growth - Monthly retainer (August),2026-08-31,2026-08-31,400.00,EUR,,,,,,Installment 6 of 6.
