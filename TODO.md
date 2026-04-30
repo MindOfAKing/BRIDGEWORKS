@@ -23,7 +23,7 @@
 - [x] Solar add-on pitch — declined by Victor (Apr 16, EUR 550, do not re-pitch)
 - [x] April content calendar published: 12/12 posts (Apr 1-24)
 - [x] Brand visual ad-samples produced (4 ads + 4 final HU/EN videos + VO audio)
-- [x] AI visibility 16/100 → 82/100 (per Sat Apr 25 BridgeWorks post)
+- [x] AI visibility (GEO score) progression: 16 (Mar baseline) → 29 (Apr 3 audit) → 47 (Apr 22 audit) → 61 (Apr 30 audit, post-Wk5 fixes). Source: clients/ceefm/reports/GEO-AUDIT-REPORT-2026-04-30.md. Replaces prior "82/100" marketing-post claim which was not audit-backed.
 - [x] Week 1 diagnosis, Week 2 system layer, Week 3 content arch, Week 4 handover docs
 
 ### Launch Prep (drafted; launch postponed from Apr 18)
